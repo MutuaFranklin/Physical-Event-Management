@@ -1,0 +1,292 @@
+html {
+  font-family:'Times New Roman', Times, serif !important;
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -ms-overflow-style: scrollbar;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
+
+/*============================================================================================ */
+	/*  HOME PAGE
+	============================================================================================ */
+
+   
+
+
+  /*============================================================================================ */
+	/*  SERVICES PAGE
+	============================================================================================ */
+
+  .services-page{
+    height: 100vh;
+    width: 100%;
+    background-image: url(../img/backgrounds/services.jpg);
+    background-size: cover;
+  }
+
+  #main-navbar{
+    background: transparent !important;
+  
+  }
+
+  #main-navbar .navbar-brand{
+  background: transparent !important;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: bold;
+  
+}
+
+  .navbar-nav > li{
+  padding-left:30px;
+  padding-right:30px;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.services-page .header h4{
+  text-align: center;
+  font-size: 13px;
+  font-weight: bold;
+  margin-top: 20px;
+  color: #fff;
+}
+
+.event-container{
+  height: 70vh;
+  background-color: #C9CAF4;
+  margin-top: 50px;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+#event-type-list .carousel-item{
+  height: 38rem;
+  /* background-color: seagreen; */
+}
+
+
+
+#event-type-list .carousel-caption{
+  position: absolute;
+  display: grid;
+  top: 90px;
+  bottom: auto;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 30px;
+  align-items: center;
+  /* margin-left:10px; */
+  /* margin-right: 15%;  */
+  margin-bottom: 40px;
+  z-index: 10;
+
+
+}
+
+#event-type-list .carousel-caption .card-container{
+  display: flex;
+  flex-direction: column;
+  
+  margin-bottom: 40px;
+}
+
+#event-type-list .carousel-caption .card-container .card-caption{
+  margin-top: 10px;
+  font-size: 13px;
+  color: black;
+}
+
+
+
+#event-type-list .carousel-caption .card{
+  height: 45vh;
+  width: 20vw;
+  background-color: turquoise;
+  border-radius: 0% !important;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.event-page-buttons{
+  display: flex;
+  justify-content: center;
+}
+
+.event-page-buttons .button-container{
+  width: 60%;
+  display: flex;
+  justify-content:space-between;
+}
+
+
+.event-page-buttons .button-container .btn{
+  height: 40px;
+  width: 150px;
+  font-size: 12px;
+  font-weight: bold;
+  border-radius: 0%;
+  background-color: #2109F6;
+  margin-left: 35px;
+}
+
+
+#event-type-list .carousel-caption #event1{
+  background-image: url("../img/events/private-event.jpg");
+  background-size: cover;
+  background-position: center;
+
+}
+
+#event-type-list .carousel-caption #event2{
+  background-image: url("https://1hq6f244nzqssy4d8fp6y7re-wpengine.netdna-ssl.com/wp-content/uploads/2018/11/elegant-wedding-glamorous-pink-floral-wedding-theme18.jpg");
+  background-size: cover; 
+  background-position: center;
+
+
+
+}
+
+#event-type-list .carousel-caption #event3{
+  background-image: url("https://www.darwinsongproject.com/wp-content/uploads/2018/01/Event-Management.jpg");
+  background-size: cover;
+  background-position: center;
+
+
+}
+
+#event-type-list .carousel-caption #event4{
+  background-image: url("https://5.imimg.com/data5/EH/FU/GLADMIN-15242729/birthday-party-events-500x500.jpg");
+  background-size: cover;
+  background-position: center;
+
+
+}
+#event-type-list .carousel-caption #event5{
+  background-image: url("https://lh3.googleusercontent.com/proxy/_UVIHFtXRx3KeLsYDHTKF3qJsq1c2OS-0qugd0TKMyCsADrhY5Q4ZG5uv7NmpK_DVHIRC-1wWOAsL5qBnJ-wVvacEIs");
+  background-size: cover;
+  background-position: center;
+
+
+}
+#event-type-list .carousel-caption #event6{
+  background-image: url("https://religionnews.com/wp-content/uploads/2020/01/webRNS-Reinhard-Bonnke7-010320-807x623.jpg");
+  background-size: cover;
+  background-position: center;
+
+
+}
+#event-type-list .carousel-caption #event7{
+  background-image: url("https://project82kenya.com/wp-content/uploads/Untitled1.png");
+  background-size: cover;
+  background-position: center;
+
+
+}
+#event-type-list .carousel-caption #event8{
+  background-image: url("https://www.shadesystems.co.ke/wp-content/uploads/2017/04/party-tent-2.jpg ");
+  background-size: cover;
+  background-position: center;
+
+
+
+}
+#event-type-list .carousel-caption #event9{
+  background-image: url("https://www.castellodicafaggio.com/en/wp-content/uploads/sites/2/2016/01/Angelo-buffet-dolci.jpg");
+  background-size: cover;
+  background-position: center;
+
+
+}
+
+
+
+ /*============================================================================================ */
+	/*  SERVICES PAGE -   On MORE INFO click
+	============================================================================================ */
+
+  #event-type-list .carousel-caption #services-list .card{
+    height: 45vh;
+    width: 30vw;
+    background-color: turquoise;
+    border-radius: 0% !important;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+  }
+
+
+
+  #event-type-list .carousel-caption #service1{
+    background-image: url("../img/services/tents.jpg");
+    background-size: cover;
+    background-position: center;
+  
+  }
+  
+  #event-type-list .carousel-caption #service2{
+    background-image: url("../img/services/event-decoration-ideas-1.jpg");
+    background-size: cover; 
+    background-position: center;
+  
+  
+  
+  }
+
+  #event-type-list .carousel-caption #service3{
+    background-image: url("https://www.kafuco.ac.ke/home/images/PHOTOS/w3CXiKnuQwqqKLHrdEfy_serving_line.jpg");
+    background-size: cover;
+    background-position: center;
+  
+  }
+  
+  #event-type-list .carousel-caption #service4{
+    background-image: url("https://togetherevents.com/wp-content/uploads/2020/05/3.jpg");
+    background-size: cover; 
+    background-position: center;
+  
+  }
+
+  #event-type-list .carousel-caption #service5{
+    background-image: url("https://janeson.co.ke/weddings/wp-content/uploads/2018/07/wedding-mc-in-kenya.jpg");
+    background-size: cover;
+    background-position: center;
+  
+  }
+  
+
+  #event-type-list .carousel-caption #service6{
+    background-image: url("https://images.squarespace-cdn.com/content/v1/5c3a982bf2e6b140769359f5/1561588563399-9KAHMA2NZPADXTRAS7HU/ke17ZwdGBToddI8pDm48kOdJA6hJ18ZDLLPQAJRCgboUqsxRUqqbr1mOJYKfIPR7LoDQ9mXPOjoJoqy81S2I8N_N4V1vUb5AoIIIbLZhVYxCRW4BPu10St3TBAUQYVKc7vrUBatrMeIKU4dNRLCQ5nPziEQvBu8CyHcdsbxL6xa2HCYIqKa1eFhmp8mtn5zx/AV-image-2.jpg?format=1500w");
+    background-size: cover;
+    background-position: center;
+  
+  }
+  
+  
+
+
+  .service-list-buttons{
+    display: flex;
+    justify-content: center;
+  }
+
+  .service-list-buttons .button-container{
+    width: 98%;
+    display: flex;
+    justify-content:space-evenly;
+  }
+  
+  
+  .service-list-buttons .button-container .btn{
+    height: 40px;
+    width: 170px;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 0%;
+    background-color: #2109F6;
+  }
