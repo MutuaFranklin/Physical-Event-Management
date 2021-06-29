@@ -16,166 +16,167 @@
 
 <body>
     <div class="container-fluid" id="eventBookingMain">
-        <div class="eventBookingInputFields">
-            <div class="form-floating mb-3">
-                <input type="text" class="form-control" id="nameInput" placeholder="Name...">
-                <label for="nameInput">Name:</label>
-            </div>
-            <div class="form-floating mb-3">
-                <input type="email" class="form-control" id="emailInput" placeholder="anybody@anything.com">
-                <label for="emailInput">Email Address:</label>
-            </div>
-            <div class="form-floating mb-3">
-                <input type="tel" class="form-control" id="phoneNumberInput" placeholder="Phone Number...">
-                <label for="phoneNumberInput">Phone Number:</label>
-            </div>
-            <div class="form-floating mb-3">
-                <input type="text" class="form-control" id="locationInput" placeholder="Location...">
-                <label for="locationInput">Location:</label>
-            </div>
-            <div class="form-floating mb-3">
-                <input type="number" class="form-control" id="projectedAttendanceInput"
-                    placeholder="Projected Attendance...">
-                <label for="projectedAttendanceInput">Projected Attendance:</label>
-            </div>
-        </div>
-
-        <!-- Buttons that trigger their individual modals -->
-        <div class="container" id="modalButtons">
-            <div class="row" id="row1">
-                <div class="col">
-                    <button type="button" class="btn btn-primary" id="selectionButtons" data-bs-toggle="modal"
-                        data-bs-target="#modal1Main">
-                        Individual Components
-                    </button>
+        <form id="eventBookingForm" action="">
+            <div class="eventBookingInputFields">
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="nameInput" placeholder="Name...">
+                    <label for="nameInput">Name:</label>
                 </div>
-                <div class="col">
-                    <button type="button" class="btn btn-primary" id="selectionButtons" data-bs-toggle="modal"
-                        data-bs-target="#modal2Main">
-                        Enitre Packages
-                    </button>
+                <div class="form-floating mb-3">
+                    <input type="email" class="form-control" id="emailInput" placeholder="anybody@anything.com">
+                    <label for="emailInput">Email Address:</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="tel" class="form-control" id="phoneNumberInput" placeholder="Phone Number...">
+                    <label for="phoneNumberInput">Phone Number:</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="locationInput" placeholder="Location...">
+                    <label for="locationInput">Location:</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="number" class="form-control" id="projectedAttendanceInput"
+                        placeholder="Projected Attendance...">
+                    <label for="projectedAttendanceInput">Projected Attendance:</label>
                 </div>
             </div>
-        </div>
 
-        <!-- Modal 1 -->
-        <div class="modal fade" id="modal1Main" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-            aria-labelledby="staticBackdropLabel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" id="modal1">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <!-- Buttons that trigger their individual modals -->
+            <div class="container" id="modalButtons">
+                <div class="row" id="row1">
+                    <div class="col">
+                        <button type="button" class="btn btn-primary" id="selectionButtons" data-bs-toggle="modal"
+                            data-bs-target="#modal1Main">
+                            Individual Components
+                        </button>
                     </div>
-                    <div class="modal-body">
-                        <p>
-                            On this section, please fill in the details that apply to you most and that will
-                            cater for your needs perfectly.
-                        </p>
-                        <div class="singleSelections">
-                            <div class="form-check form-switch" id="tentsSwitchMain">
-                                <input class="form-check-input" type="checkbox" id="tentsSwitch">
-                                <label class="form-check-label" for="tentsSwitch">Tents and Seats</label>
-                            </div>
-                            <div class="form-check form-switch" id="audioSwitchMain">
-                                <input class="form-check-input" type="checkbox" id="audioSwitch">
-                                <label class="form-check-label" for="audioSwitch">Sound System</label>
-                            </div>
-                            <div class="form-check form-switch" id="cateringSwitchMain">
-                                <input class="form-check-input" type="checkbox" id="cateringSwitch">
-                                <label class="form-check-label" for="cateringSwitch">Food and drinks Catering</label>
-                            </div>
+                    <div class="col">
+                        <button type="button" class="btn btn-primary" id="selectionButtons" data-bs-toggle="modal"
+                            data-bs-target="#modal2Main">
+                            Enitre Packages
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal 1 -->
+            <div class="modal fade" id="modal1Main" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+                aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" id="modal1">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
-                        <div class="singleSelectionsCost">
+                        <div class="modal-body">
                             <p>
-                                The Total cost for your selection(s): <span class="singleSelectionTotal">2555555 </span>
+                                On this section, please fill in the details that apply to you most and that will
+                                cater for your needs perfectly.
                             </p>
+                            <div class="singleSelections">
+                                <div class="form-check form-switch" id="tentsSwitchMain">
+                                    <input class="form-check-input" type="checkbox" id="tentsSwitch">
+                                    <label class="form-check-label" for="tentsSwitch">Tents and Seats</label>
+                                </div>
+                                <div class="form-check form-switch" id="audioSwitchMain">
+                                    <input class="form-check-input" type="checkbox" id="audioSwitch">
+                                    <label class="form-check-label" for="audioSwitch">Sound System</label>
+                                </div>
+                                <div class="form-check form-switch" id="cateringSwitchMain">
+                                    <input class="form-check-input" type="checkbox" id="cateringSwitch">
+                                    <label class="form-check-label" for="cateringSwitch">Food and drinks Catering</label>
+                                </div>
+                            </div>
+                            <div class="singleSelectionsCost">
+                                <p>
+                                    The Total cost for your selection(s): <span class="singleSelectionTotal">2555555 </span>
+                                </p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary">Book Now</button>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Book Now</button>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
 
-        <!-- Modal 2 -->
-        <div class="modal fade" id="modal2Main" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-            aria-labelledby="staticBackdropLabel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" id="modal2">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <p>
-                            On this section, please fill in the details that apply to you most and that will
-                            cater for your needs perfectly.
-                        </p>
-                        <div class="packageSelections">
-                            <div class="basicsMain">
-                                <div class="form-check form-switch" id="BasicSwitchMain" data-bs-toggle="collapse"
-                                    data-bs-target="#basicsDetails" aria-expanded="false" aria-controls="basicsDetails">
-                                    <input class="form-check-input" type="radio" name="packages" id="basicsSwitch">
-                                    <label class="form-check-label" for="basicsSwitch">Basic Package</label>
-                                </div>
-                                <div class="collapse" id="basicsDetails">
-                                    <div class="card card-body">
-                                        Some placeholder content for the collapse component. This panel is hidden by
-                                        default but revealed when the user
-                                        activates the relevant trigger.
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="premiumMain">
-                                <div class="form-check form-switch" id="premiumSwitchMain" data-bs-toggle="collapse"
-                                    data-bs-target="#premiumDetails" aria-expanded="false"
-                                    aria-controls="premiumDetails">
-                                    <input class="form-check-input" type="radio" name="packages" id="premiumSwitch">
-                                    <label class="form-check-label" for="premiumSwitch">Premium Package</label>
-                                </div>
-                                <div class="collapse" id="premiumDetails">
-                                    <div class="card card-body">
-                                        Some placeholder content for the collapse component. This panel is hidden by
-                                        default but revealed when the
-                                        user
-                                        activates the relevant trigger.
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="proMain">
-                                <div class="form-check form-switch" id="BasicSwitchMain" data-bs-toggle="collapse"
-                                    data-bs-target="#proDetails" aria-expanded="false" aria-controls="proDetails">
-                                    <input class="form-check-input" type="radio" name="packages" id="proSwitch">
-                                    <label class="form-check-label" for="proSwitch">Tents and Seats</label>
-                                </div>
-                                <div class="collapse" id="proDetails">
-                                    <div class="card card-body">
-                                        Some placeholder content for the collapse component. This panel is hidden by
-                                        default but revealed when the
-                                        user
-                                        activates the relevant trigger.
-                                    </div>
-                                </div>
-                            </div>
+            <!-- Modal 2 -->
+            <div class="modal fade" id="modal2Main" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+                aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" id="modal2">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
-                        <div class="packageSelectionsCost">
+                        <div class="modal-body">
                             <p>
-                                The Total cost for your selection(s): <span class="packageSelectionTotal">2555555
-                                </span>
+                                On this section, please fill in the details that apply to you most and that will
+                                cater for your needs perfectly.
                             </p>
+                            <div class="packageSelections">
+                                <div class="basicsMain">
+                                    <div class="form-check form-switch" id="BasicSwitchMain" data-bs-toggle="collapse"
+                                        data-bs-target="#basicsDetails" aria-expanded="false" aria-controls="basicsDetails">
+                                        <input class="form-check-input" type="radio" name="packages" id="basicsSwitch">
+                                        <label class="form-check-label" for="basicsSwitch">Basic Package</label>
+                                    </div>
+                                    <div class="collapse" id="basicsDetails">
+                                        <div class="card card-body">
+                                            Some placeholder content for the collapse component. This panel is hidden by
+                                            default but revealed when the user
+                                            activates the relevant trigger.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="premiumMain">
+                                    <div class="form-check form-switch" id="premiumSwitchMain" data-bs-toggle="collapse"
+                                        data-bs-target="#premiumDetails" aria-expanded="false"
+                                        aria-controls="premiumDetails">
+                                        <input class="form-check-input" type="radio" name="packages" id="premiumSwitch">
+                                        <label class="form-check-label" for="premiumSwitch">Premium Package</label>
+                                    </div>
+                                    <div class="collapse" id="premiumDetails">
+                                        <div class="card card-body">
+                                            Some placeholder content for the collapse component. This panel is hidden by
+                                            default but revealed when the
+                                            user
+                                            activates the relevant trigger.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="proMain">
+                                    <div class="form-check form-switch" id="BasicSwitchMain" data-bs-toggle="collapse"
+                                        data-bs-target="#proDetails" aria-expanded="false" aria-controls="proDetails">
+                                        <input class="form-check-input" type="radio" name="packages" id="proSwitch">
+                                        <label class="form-check-label" for="proSwitch">Tents and Seats</label>
+                                    </div>
+                                    <div class="collapse" id="proDetails">
+                                        <div class="card card-body">
+                                            Some placeholder content for the collapse component. This panel is hidden by
+                                            default but revealed when the
+                                            user
+                                            activates the relevant trigger.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="packageSelectionsCost">
+                                <p>
+                                    The Total cost for your selection(s): <span class="packageSelectionTotal">2555555
+                                    </span>
+                                </p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary">Book Now</button>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Book Now</button>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-
+        </form>
     </div>
 </body>
 
