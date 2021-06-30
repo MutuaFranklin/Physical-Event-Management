@@ -1,0 +1,171 @@
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+  .dropdown #drop{
+		font-size: 10px;
+	}
+  #main-navbar{
+    width: 100%;
+  }
+	
+  #main-navbar .navbar-toggler {
+    border: none;
+    border-radius: 0px;
+    padding: 0px;
+    cursor: pointer;
+    margin-top: 27px;
+    margin-bottom: 23px;
+  }
+  .navbar-brand{
+    margin-left: 20px;
+    /* color: #2109F6 !important; */
+
+}
+
+
+
+#main-navbar .navbar-toggler[aria-expanded="false"] span:nth-child(2) {
+    opacity: 1;
+  }
+
+  #main-navbar .navbar-toggler[aria-expanded="true"] span:nth-child(2) {
+    opacity: 0;
+  }
+
+  #main-navbar .navbar-toggler[aria-expanded="true"] span:first-child {
+    transform: rotate(-45deg);
+    position: relative;
+    top: 7.5px;
+  }
+
+ #main-navbar .navbar-toggler[aria-expanded="true"] span:last-child {
+    transform: rotate(45deg);
+    bottom: 6px;
+    position: relative;
+  }
+
+  #main-navbar .navbar-toggler span{
+    display: block;
+    width: 25px;
+    height: 3px;
+    background: #2109F6;
+    margin: auto;
+    margin-bottom: 4px;
+    margin-right: 5px;
+    transition: all 400ms linear;
+    cursor: pointer;
+  }
+
+ /*  ============================================================================================ */
+	/* SERVICE PAGE
+	============================================================================================ */  
+  
+  .event-container{
+    height: 73vh;
+    background-color: #C9CAF4;
+    margin-top: 50px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 8px !important;
+  
+  }
+
+  .carousel-inner{
+    height: 470px;
+ }
+
+
+
+
+ /*============================================================================================ */
+	/*  SERVICES PAGE -   On MORE INFO click
+	============================================================================================ */
+
+
+
+  #event-type-list .carousel-caption{
+    position: absolute;
+    display: grid;
+    top: 40px;
+    bottom: auto;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 10px;
+    align-items: center;
+    /* margin-left:10px; */
+    /* margin-right: 15%;  */
+    margin-bottom: 30px !important;
+    z-index: 10;
+  
+  
+  }
+  
+  #event-type-list .carousel-caption .card-container{
+    display: flex;
+    flex-direction: column;
+    
+    margin-bottom: 30px !important; 
+  }
+  
+  #event-type-list .carousel-caption .card-container .card-caption{
+    margin-top: 20px;
+    margin-bottom: 30px !important; 
+    font-size: 13px;
+    color: black;
+  }
+  
+  
+  
+  #event-type-list .carousel-caption .card{
+    height: 25vh;
+    width: 20vw;
+    background-color: turquoise;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px !important;
+  
+  }
+
+
+.event-page-buttons{
+  display: flex;
+  justify-content: center;
+}
+
+.event-page-buttons .button-container{
+  width: 60%;
+  display: flex;
+  justify-content:space-between;
+}
+
+.event-page-buttons .button-container .btn{
+  height: 40px;
+  width: 150px;
+  font-size: 10px !important;
+  font-weight: bold;
+  border-radius: 0%;
+  background-color: #2109F6;
+  margin-left: 35px;
+}
+
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px)and (max-width:991px){
+
+  
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}
