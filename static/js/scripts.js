@@ -24,10 +24,12 @@ $(document).ready(function(){
 
         var total = 0;
 
-        if (tentsSelect.checked == true && audioSelect == true && cateringSelect == true){
-            total = ((attendanceInput/15) * 2000) + 5000 + (attendanceInput * 750);
-        } else if (tentsSelect.checked == true){
-            total = ((attendanceInput / 15) * 2000);
+        if (tentsSelect.checked == true && audioSelect == true && cateringSelect == true && photographySelect.checked == true){
+            total = ((attendanceInput/15) * 2000) + 5000 + (attendanceInput * 750) + 10000;
+        } else if (tentsSelect.checked == true && audioSelect == true && cateringSelect == true){
+            total = ((attendanceInput / 15) * 2000) + 5000 + (attendanceInput * 750);
+        }else if (tentsSelect.checked == true && audioSelect == true) {
+            total = ((attendanceInput / 15) * 2000) + 5000 + (attendanceInput * 750);
         } else if (audioSelect == true){
             total = 5000;
         } else if (cateringSelect == true){

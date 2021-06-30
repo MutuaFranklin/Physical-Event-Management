@@ -3,6 +3,25 @@ html, body{
     height: 100%;
     background: linear-gradient(to right, #00d2ff, #3a7bd5);
 }
+#main-navbar{
+    background: transparent !important;
+  
+}
+
+#main-navbar .navbar-brand{
+  background: transparent !important;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: bold; 
+}
+
+.navbar-nav > li{
+  padding-left:30px;
+  padding-right:30px;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: bold;
+}
 #eventBookingForm{
     display: flex;
     flex-direction: column;
@@ -41,8 +60,10 @@ html, body{
     align-items: center;
 }
 #selectionButtons{
-    height: 100%;
+    width: 230px;
+    height: 40px;
 }
 #row1{
     display: flex;
 }
+
