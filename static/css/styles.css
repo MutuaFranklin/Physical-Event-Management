@@ -225,6 +225,15 @@ html {
   
   }
 
+  #event-type-list .carousel-caption #services-list .card .service-description{
+    height: 37vh;
+    width: 25vw;
+    border: 2px solid white;
+    display: none;
+    justify-content: center;
+    align-items: center;
+  }
+
 
 
   #event-type-list .carousel-caption #service1{
@@ -233,21 +242,36 @@ html {
     background-position: center;
   
   }
+
+  #event-type-list .carousel-caption #service1:hover{
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../img/services/tents.jpg);
+
+  }
+
   
   #event-type-list .carousel-caption #service2{
     background-image: url("../img/services/event-decoration-ideas-1.jpg");
     background-size: cover; 
     background-position: center;
-  
-  
-  
+   
   }
+
+  #event-type-list .carousel-caption #service2:hover{
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../img/services/event-decoration-ideas-1.jpg);
+
+  }
+
 
   #event-type-list .carousel-caption #service3{
     background-image: url("https://www.kafuco.ac.ke/home/images/PHOTOS/w3CXiKnuQwqqKLHrdEfy_serving_line.jpg");
     background-size: cover;
     background-position: center;
   
+  }
+
+  #event-type-list .carousel-caption #service3:hover{
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("https://www.kafuco.ac.ke/home/images/PHOTOS/w3CXiKnuQwqqKLHrdEfy_serving_line.jpg");
+
   }
   
   #event-type-list .carousel-caption #service4{
@@ -257,12 +281,23 @@ html {
   
   }
 
+  #event-type-list .carousel-caption #service4:hover{
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("https://togetherevents.com/wp-content/uploads/2020/05/3.jpg");
+
+  }
+
   #event-type-list .carousel-caption #service5{
     background-image: url("https://janeson.co.ke/weddings/wp-content/uploads/2018/07/wedding-mc-in-kenya.jpg");
     background-size: cover;
     background-position: center;
   
   }
+
+  #event-type-list .carousel-caption #service5:hover{
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("https://janeson.co.ke/weddings/wp-content/uploads/2018/07/wedding-mc-in-kenya.jpg");
+
+  }
+
   
 
   #event-type-list .carousel-caption #service6{
@@ -271,6 +306,12 @@ html {
     background-position: center;
   
   }
+
+  #event-type-list .carousel-caption #service6:hover{
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("https://images.squarespace-cdn.com/content/v1/5c3a982bf2e6b140769359f5/1561588563399-9KAHMA2NZPADXTRAS7HU/ke17ZwdGBToddI8pDm48kOdJA6hJ18ZDLLPQAJRCgboUqsxRUqqbr1mOJYKfIPR7LoDQ9mXPOjoJoqy81S2I8N_N4V1vUb5AoIIIbLZhVYxCRW4BPu10St3TBAUQYVKc7vrUBatrMeIKU4dNRLCQ5nPziEQvBu8CyHcdsbxL6xa2HCYIqKa1eFhmp8mtn5zx/AV-image-2.jpg?format=1500w");
+
+  }
+
   
   
 
