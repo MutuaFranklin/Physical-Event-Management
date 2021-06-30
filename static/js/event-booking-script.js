@@ -11,11 +11,11 @@ $(document).ready(function(){
     $("form#eventBookingForm").submit(function(event){
         event.preventDefault();
 
-        var namesInput = document.getElementById("nameInput").value;
-        var emailInput = document.getElementById("emailInput").value;
-        var telNumberInput = document.getElementById("telNumberInput").value;
-        var locationInput = document.getElementById("locationInput").value;
-        var attendanceInput = document.getElementById("attendanceInput").value;
+        var namesInput = document.getElementById("nameUserInput").value;
+        var emailInput = document.getElementById("emailUserInput").value;
+        var telNumberInput = document.getElementById("phoneNumberInput").value;
+        var locationInput = document.getElementById("locationUserInput").value;
+        var attendanceInput = parseInt(document.getElementById("projectedAttendanceInput").value);
 
         var tentsSelect = document.getElementById("tentsSwitch");
         var audioSelect = document.getElementById("audioSwitch");
@@ -105,11 +105,11 @@ $(document).ready(function(){
             } else if (attendanceInput <= 50) {
                 total = 10000 + 10000;
             }
-        } else if (cateringSelect == true && photographySelect.checked == true){
+        } else if (cateringSelect.checked == true && photographySelect.checked == true){
             total = (attendanceInput * 750) + 10000;
-        } else if (tentSelect == true){
+        } else if (tentsSelect.checked == true){
             total = ((attendanceInput / 15) * 2000);
-        } else if (audioSelect == true) {
+        } else if (audioSelect.checked == true) {
             if (attendanceInput > 1000) {
                 total = ((attendanceInput / 15) * 2000) + 60000 + (attendanceInput * 750) + 10000;
             } else if (attendanceInput <= 1000) {
@@ -125,11 +125,7 @@ $(document).ready(function(){
             total = (attendanceInput * 750);
         } else if (photographySelect == true) {
             total = 10000;
-        }else {
-            alert("Please choose a service that you require. You may browse the page for more options")
-        }
-
-        if (basicsSelect.checked == true) {
+        } else if (basicsSelect.checked == true) {
             if (attendanceInput > 1000) {
                 total = ((attendanceInput / 15) * 2000) + 60000 + (attendanceInput * 500);
             } else if (attendanceInput <= 1000) {
@@ -164,9 +160,14 @@ $(document).ready(function(){
                 total = ((attendanceInput / 15) * 6000) + 15000 + (attendanceInput * 2500) + 100000 + 50000 + 75000;
             } else if (attendanceInput <= 50) {
                 total = ((attendanceInput / 15) * 6000) + 10000 + (attendanceInput * 2500) + 100000 + 50000 + 75000;
-            }         } else {
-            alert("Please choose a package that you require. You may browse the page for more options")
+            }         
+        } else {
+            alert("Please choose a package that you require. You may browse the page for more options");
         }
+        
+        var grandTotal = parseInt(total)
+        alert("Your total is " + grandTotal);
+        console.log(attendanceInput);
     })
 
 });
