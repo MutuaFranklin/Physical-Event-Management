@@ -106,7 +106,7 @@ html {
 #event-type-list .carousel-caption .card{
   height: 45vh;
   width: 20vw;
-  background-color: turquoise;
+  background-color: grey;
   border-radius: 0% !important;
   border: none;
   display: flex;
@@ -216,7 +216,7 @@ html {
   #event-type-list .carousel-caption #services-list .card{
     height: 45vh;
     width: 30vw;
-    background-color: turquoise;
+    background-color: grey;
     border-radius: 0% !important;
     border: none;
     display: flex;
