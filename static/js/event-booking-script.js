@@ -22,6 +22,11 @@ $(document).ready(function(){
         var cateringSelect = document.getElementById("cateringSwitch");
         var photographySelect = document.getElementById("photographySwitch");
 
+        var basicsSelect = document.getElementById("basicsSwitch");
+        var premiumSelect = document.getElementById("premiumSwitch");
+        var proSelect = document.getElementById("proSwitch");
+
+
         var total = 0;
 
         if (tentsSelect.checked == true && audioSelect == true && cateringSelect == true && photographySelect.checked == true){
@@ -38,72 +43,72 @@ $(document).ready(function(){
             }
         } else if (tentsSelect.checked == true && audioSelect == true && cateringSelect == true){
             if (attendanceInput > 1000) {
-                total = ((attendanceInput / 15) * 2000) + 60000 + (attendanceInput * 750) ;
+                total = ((attendanceInput / 15) * 2000) + 60000 + (attendanceInput * 750);
             } else if (attendanceInput <= 1000) {
                 total = ((attendanceInput / 15) * 2000) + 40000 + (attendanceInput * 750);
             } else if (attendanceInput <= 500) {
                 total = ((attendanceInput / 15) * 2000) + 25000 + (attendanceInput * 750);
             } else if (attendanceInput <= 100) {
-                total = ((attendanceInput / 15) * 2000) + 15000 + (attendanceInput * 750) + 10000;
+                total = ((attendanceInput / 15) * 2000) + 15000 + (attendanceInput * 750);
             } else if (attendanceInput <= 50) {
-                total = ((attendanceInput / 15) * 2000) + 10000 + (attendanceInput * 750) + 10000;
+                total = ((attendanceInput / 15) * 2000) + 10000 + (attendanceInput * 750);
             }
         } else if (tentsSelect.checked == true && audioSelect == true) {
             if (attendanceInput > 1000) {
-                total = ((attendanceInput / 15) * 2000) + 60000 + (attendanceInput * 750) + 10000;
+                total = ((attendanceInput / 15) * 2000) + 60000;
             } else if (attendanceInput <= 1000) {
-                total = ((attendanceInput / 15) * 2000) + 40000 + (attendanceInput * 750) + 10000;
+                total = ((attendanceInput / 15) * 2000) + 40000;
             } else if (attendanceInput <= 500) {
-                total = ((attendanceInput / 15) * 2000) + 25000 + (attendanceInput * 750) + 10000;
+                total = ((attendanceInput / 15) * 2000) + 25000;
             } else if (attendanceInput <= 100) {
-                total = ((attendanceInput / 15) * 2000) + 15000 + (attendanceInput * 750) + 10000;
+                total = ((attendanceInput / 15) * 2000) + 15000;
             } else if (attendanceInput <= 50) {
-                total = ((attendanceInput / 15) * 2000) + 10000 + (attendanceInput * 750) + 10000;
+                total = ((attendanceInput / 15) * 2000) + 10000;
             }
         } else if (tentsSelect.checked == true && cateringSelect.checked == true){
-            total =0;
+            total = ((attendanceInput / 15) * 2000) + (attendanceInput * 750);
         } else if (tentsSelect.checked == true && photographySelect.checked == true){
-            total = 0;
+            total = ((attendanceInput / 15) * 2000) + 10000;
         } else if (audioSelect == true && cateringSelect == true && photographySelect.checked == true) {
             if (attendanceInput > 1000) {
-                total = ((attendanceInput / 15) * 2000) + 60000 + (attendanceInput * 750) + 10000;
+                total = 60000 + (attendanceInput * 750) + 10000;
             } else if (attendanceInput <= 1000) {
-                total = ((attendanceInput / 15) * 2000) + 40000 + (attendanceInput * 750) + 10000;
+                total =  40000 + (attendanceInput * 750) + 10000;
             } else if (attendanceInput <= 500) {
-                total = ((attendanceInput / 15) * 2000) + 25000 + (attendanceInput * 750) + 10000;
+                total = 25000 + (attendanceInput * 750) + 10000;
             } else if (attendanceInput <= 100) {
-                total = ((attendanceInput / 15) * 2000) + 15000 + (attendanceInput * 750) + 10000;
+                total = 15000 + (attendanceInput * 750) + 10000;
             } else if (attendanceInput <= 50) {
-                total = ((attendanceInput / 15) * 2000) + 10000 + (attendanceInput * 750) + 10000;
+                total = 10000 + (attendanceInput * 750) + 10000;
             }
         } else if (audioSelect == true && cateringSelect == true) {
             if (attendanceInput > 1000) {
-                total = ((attendanceInput / 15) * 2000) + 60000 + (attendanceInput * 750) + 10000;
+                total = 60000 + (attendanceInput * 750);
             } else if (attendanceInput <= 1000) {
-                total = ((attendanceInput / 15) * 2000) + 40000 + (attendanceInput * 750) + 10000;
+                total =  40000 + (attendanceInput * 750);
             } else if (attendanceInput <= 500) {
-                total = ((attendanceInput / 15) * 2000) + 25000 + (attendanceInput * 750) + 10000;
+                total = 25000 + (attendanceInput * 750);
             } else if (attendanceInput <= 100) {
-                total = ((attendanceInput / 15) * 2000) + 15000 + (attendanceInput * 750) + 10000;
+                total = 15000 + (attendanceInput * 750);
             } else if (attendanceInput <= 50) {
-                total = ((attendanceInput / 15) * 2000) + 10000 + (attendanceInput * 750) + 10000;
+                total =  10000 + (attendanceInput * 750);
             }
         } else if (audioSelect == true && photographySelect.checked == true) {
             if (attendanceInput > 1000) {
-                total = ((attendanceInput / 15) * 2000) + 60000 + (attendanceInput * 750) + 10000;
+                total = 60000 + 10000;
             } else if (attendanceInput <= 1000) {
-                total = ((attendanceInput / 15) * 2000) + 40000 + (attendanceInput * 750) + 10000;
+                total = 40000 + 10000;
             } else if (attendanceInput <= 500) {
-                total = ((attendanceInput / 15) * 2000) + 25000 + (attendanceInput * 750) + 10000;
+                total = 25000 + 10000;
             } else if (attendanceInput <= 100) {
-                total = ((attendanceInput / 15) * 2000) + 15000 + (attendanceInput * 750) + 10000;
+                total = 15000 + 10000;
             } else if (attendanceInput <= 50) {
-                total = ((attendanceInput / 15) * 2000) + 10000 + (attendanceInput * 750) + 10000;
+                total = 10000 + 10000;
             }
         } else if (cateringSelect == true && photographySelect.checked == true){
-            total = 5000;
+            total = (attendanceInput * 750) + 10000;
         } else if (tentSelect == true){
-            total = (attendanceInput * 750);
+            total = ((attendanceInput / 15) * 2000);
         } else if (audioSelect == true) {
             if (attendanceInput > 1000) {
                 total = ((attendanceInput / 15) * 2000) + 60000 + (attendanceInput * 750) + 10000;
@@ -119,18 +124,47 @@ $(document).ready(function(){
         } else if (cateringSelect == true) {
             total = (attendanceInput * 750);
         } else if (photographySelect == true) {
-            total = (attendanceInput * 750);
+            total = 10000;
         }else {
             alert("Please choose a service that you require. You may browse the page for more options")
         }
 
-        if (tentsSelect.checked == true && audioSelect == true && cateringSelect == true) {
-            total = ((attendanceInput / 15) * 2000) + 5000 + (attendanceInput * 750);
-        } else if (tentsSelect.checked == true && audioSelect == true && cateringSelect == true) {
-            total = ((attendanceInput / 15) * 2000) + 5000 + (attendanceInput * 750);
-        } else if (tentsSelect.checked == true && audioSelect == true && cateringSelect == true) {
-            total = ((attendanceInput / 15) * 2000) + 5000 + (attendanceInput * 750);
-        } else {
+        if (basicsSelect.checked == true) {
+            if (attendanceInput > 1000) {
+                total = ((attendanceInput / 15) * 2000) + 60000 + (attendanceInput * 500);
+            } else if (attendanceInput <= 1000) {
+                total = ((attendanceInput / 15) * 2000) + 40000 + (attendanceInput * 500);
+            } else if (attendanceInput <= 500) {
+                total = ((attendanceInput / 15) * 2000) + 25000 + (attendanceInput * 500);
+            } else if (attendanceInput <= 100) {
+                total = ((attendanceInput / 15) * 2000) + 15000 + (attendanceInput * 500);
+            } else if (attendanceInput <= 50) {
+                total = ((attendanceInput / 15) * 2000) + 10000 + (attendanceInput * 500);
+            }
+        } else if (premiumSelect.checked == true) {
+            if (attendanceInput > 1000) {
+                total = ((attendanceInput / 15) * 4000) + 60000 + (attendanceInput * 1000) + 70000 + 25000 + 10000;
+            } else if (attendanceInput <= 1000) {
+                total = ((attendanceInput / 15) * 4000) + 40000 + (attendanceInput * 1000)+ 70000 + 25000 + 10000;
+            } else if (attendanceInput <= 500) {
+                total = ((attendanceInput / 15) * 4000) + 25000 + (attendanceInput * 1000)+ 70000 + 25000 + 10000;
+            } else if (attendanceInput <= 100) {
+                total = ((attendanceInput / 15) * 4000) + 15000 + (attendanceInput * 1000)+ 70000 + 25000 + 10000;
+            } else if (attendanceInput <= 50) {
+                total = ((attendanceInput / 15) * 4000) + 10000 + (attendanceInput * 1000)+ 70000 + 25000 + 10000;
+            }        
+        } else if (proSelect.checked == true) {
+            if (attendanceInput > 1000) {
+                total = ((attendanceInput / 15) * 6000) + 60000 + (attendanceInput * 2500) + 100000 + 50000 + 75000;
+            } else if (attendanceInput <= 1000) {
+                total = ((attendanceInput / 15) * 6000) + 40000 + (attendanceInput * 2500) + 100000 + 50000 + 75000;
+            } else if (attendanceInput <= 500) {
+                total = ((attendanceInput / 15) * 6000) + 25000 + (attendanceInput * 2500) + 100000 + 50000 + 75000;
+            } else if (attendanceInput <= 100) {
+                total = ((attendanceInput / 15) * 6000) + 15000 + (attendanceInput * 2500) + 100000 + 50000 + 75000;
+            } else if (attendanceInput <= 50) {
+                total = ((attendanceInput / 15) * 6000) + 10000 + (attendanceInput * 2500) + 100000 + 50000 + 75000;
+            }         } else {
             alert("Please choose a package that you require. You may browse the page for more options")
         }
     })
