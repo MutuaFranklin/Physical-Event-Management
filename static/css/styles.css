@@ -55,11 +55,12 @@ html {
 
 .event-container{
   height: 70vh;
-  background-color: #C9CAF4;
+  background-color: rgb(201,	202,	244, 0.5);
   margin-top: 50px;
   margin-left: 100px;
   margin-right: 100px;
   border-radius: 8px !important;
+
 
 }
 
@@ -95,8 +96,9 @@ html {
 
 #event-type-list .carousel-caption .card-container .card-caption{
   margin-top: 10px;
-  font-size: 13px;
+  font-size: 12px;
   color: black;
+  font-weight: bold;
 }
 
 
