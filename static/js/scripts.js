@@ -99,15 +99,3 @@ $(document).ready(function(){
   });    
 
 
-
-  // $(document).ready(function () {
-  //   $("#work1").hover(
-  //     function () {
-  //       $("#work1 .solid-border").show();
-  //     },
-  //     function () {
-  //       $("#work1 .solid-border").hide();
-  //     },
-      
-  //   );
-  // });
