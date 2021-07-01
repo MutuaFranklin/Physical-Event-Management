@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./static/css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="./static/css/event-booking.css" rel="stylesheet" type="text/css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="./static/js/jquery-3.6.0.js"></script>
+    <script src="./static/js/event-booking-script.js"></script>
+    <script src="./static/js/bootstrap.js"></script>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark  bg-dark" id="main-navbar">
+        <a class="navbar-brand" href="index.html"></span>PEMS<br><small></small></small></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#ftco-nav"
+            aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="ftco-nav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item active"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="about-us.html" class="nav-link">About Us</a></li>
+                <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
+                <li class="nav-item"><a href="enquire.html" class="nav-link">Enquire</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container-fluid" id="eventBookingMain">
+        <form id="eventBookingForm">
+            <div class="eventBookingInputFields">
+                <div class="form-floating mb-3" id="size">
+                    <input type="text" class="form-control" id="nameUserInput" placeholder="Name...">
+                    <label for="nameInput">Name:</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="email" class="form-control" id="emailUserInput" placeholder="anybody@anything.com">
+                    <label for="emailInput">Email Address:</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="tel" class="form-control" id="phoneNumberInput" placeholder="Phone Number...">
+                    <label for="phoneNumberInput">Phone Number:</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="locationUserInput" placeholder="Location...">
+                    <label for="locationInput">Location:</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="number" class="form-control" id="projectedAttendanceInput"
+                        placeholder="Projected Attendance...">
+                    <label for="projectedAttendanceInput">Projected Attendance:</label>
+                </div>
+            </div>
+
+            <!-- Buttons that trigger their individual modals -->
+            <div class="container" id="modalButtons">
+                <div class="row" id="row1">
+                    <div class="col">
+                        <button type="button" class="btn btn-primary" id="selectionButtons" data-bs-toggle="modal"
+                            data-bs-target="#modal1Main">
+                            Individual Components
+                        </button>
+                    </div>
+                    <div class="col">
+                        <button type="button" class="btn btn-primary" id="selectionButtons" data-bs-toggle="modal"
+                            data-bs-target="#modal2Main">
+                            Entire Packages
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal 1 -->
+            <div class="modal fade" id="modal1Main" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+                aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" id="modal1">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="staticBackdropLabel">Individual Components</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p>
+                                On this section, please fill in the details that apply to you most and that will
+                                cater for your needs perfectly.
+                            </p>
+                            <div class="singleSelections">
+                                <div class="form-check form-switch" id="tentsSwitchMain">
+                                    <input class="form-check-input" type="checkbox" id="tentsSwitch">
+                                    <label class="form-check-label" for="tentsSwitch">Tents and Seats</label>
+                                </div>
+                                <div class="form-check form-switch" id="audioSwitchMain">
+                                    <input class="form-check-input" type="checkbox" id="audioSwitch">
+                                    <label class="form-check-label" for="audioSwitch">Sound System</label>
+                                </div>
+                                <div class="form-check form-switch" id="cateringSwitchMain">
+                                    <input class="form-check-input" type="checkbox" id="cateringSwitch">
+                                    <label class="form-check-label" for="cateringSwitch">Food and Drinks Catering</label>
+                                </div>
+                                <div class="form-check form-switch" id="photographySwitchMain">
+                                    <input class="form-check-input" type="checkbox" id="photographySwitch">
+                                    <label class="form-check-label" for="photographySwitch">Photography</label>
+                                </div>
+                            </div>
+                            <div class="singleSelectionsCost">
+                                <p>
+                                    The Total cost for your selection(s): <span class="singleSelectionTotal"></span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="submit" class="btn btn-primary">Book Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal 2 -->
+            <div class="modal fade" id="modal2Main" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" -->
+                aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" id="modal2">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="staticBackdropLabel">Entire Package</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p>
+                                On this section, please fill in the details that apply to you most and that will
+                                cater for your needs perfectly.
+                            </p>
+                            <div class="packageSelections">
+                                <div class="basicsMain">
+                                    <div class="form-check form-switch" id="BasicSwitchMain" data-bs-toggle="collapse"
+                                        data-bs-target="#basicsDetails" aria-expanded="false" aria-controls="basicsDetails">
+                                        <input class="form-check-input" type="radio" name="packages" id="basicsSwitch">
+                                        <label class="form-check-label" for="basicsSwitch">Basic Package</label>
+                                    </div>
+                                    <div class="collapse" id="basicsDetails">
+                                        <div class="card card-body">
+                                            <p>
+                                                Want to have a last minute party and still make it look good? Or maybe you want a 
+                                                pocket friendly function but a good one regardless, PEMS Event Management has you covered no 
+                                                matter the situation. We offer the following:
+                                            <div class="container">
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <ul>
+                                                            <li>Tents and Seats for all your guests</li>
+                                                            <li>Catering based off your desired menu</li>
+                                                            <li>Securing a sound system for your functioin for the whole day</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="premiumMain">
+                                    <div class="form-check form-switch" id="premiumSwitchMain" data-bs-toggle="collapse"
+                                        data-bs-target="#premiumDetails" aria-expanded="false"
+                                        aria-controls="premiumDetails">
+                                        <input class="form-check-input" type="radio" name="packages" id="premiumSwitch">
+                                        <label class="form-check-label" for="premiumSwitch">Premium Package</label>
+                                    </div>
+                                    <div class="collapse" id="premiumDetails">
+                                        <div class="card card-body">
+                                            <p>
+                                                This package is very good for situations where you'd like to impress your guests but on a budget.
+                                                Who said you can't party like a king, even if you aren't one? This is the right package for you. 
+                                                If you are interested in it, this is what it entails:
+                                                <div class="container">
+                                                    <div class="row">
+                                                        <div class="col">
+                                                            <ul>
+                                                                <li>Stylish Tents and Seats</li>
+                                                                <li>Food and Drinks Catering</li>
+                                                                <li>An amazing sound system with a capable DJ</li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="col">
+                                                            <ul>
+                                                                <li>A Master of Ceremony well known in the industry</li>
+                                                                <li>Decorations and post clean-up services</li>
+                                                                <li>A talented photographer</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="proMain">
+                                    <div class="form-check form-switch" id="BasicSwitchMain" data-bs-toggle="collapse"
+                                        data-bs-target="#proDetails" aria-expanded="false" aria-controls="proDetails">
+                                        <input class="form-check-input" type="radio" name="packages" id="proSwitch">
+                                        <label class="form-check-label" for="proSwitch">Pro Package</label>
+                                    </div>
+                                    <div class="collapse" id="proDetails">
+                                        <div class="card card-body">
+                                            <p>
+                                                Looking forward to having a world class function with no stress whatsoever?
+                                                Our Pro package is the perfect one for you. Sit back and let our talented team bring all your wishes to reality!
+                                                We offer the following services in this package:
+                                            <div class="container">
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <ul>
+                                                            <li>Imported Tents and Seats</li>
+                                                            <li>Food and Drinks Catering from five star hotels</li>
+                                                            <li>Top tier sound sytems with a fully dedicated DJ</li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="col">
+                                                        <ul>
+                                                            <li>A Master of Ceremony that will have the crowd on its feet</li>
+                                                            <li>Decorations to blow your guests minds together with cleanup</li>
+                                                            <li>A world class photographer and videographer that will capture all the moments</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="packageSelectionsCost">
+                                <p>
+                                    The Total cost for your selection(s): <span class="packageSelectionTotal"></span>                               </span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="submit" class="btn btn-primary">Book Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        </form>
+    </div>
+</body>
+
+</html>
