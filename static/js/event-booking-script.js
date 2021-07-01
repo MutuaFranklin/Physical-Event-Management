@@ -17,7 +17,7 @@ $(document).ready(function(){
         var locationInput = document.getElementById("locationUserInput").value;
         var attendanceInput = parseInt(document.getElementById("projectedAttendanceInput").value);
 
-        if (namesInput == "" || emailInput == "" || telNumberInput == "" || locationInput == ""){
+        if (namesInput == "" || emailInput == "" || telNumberInput == "" || locationInput == "" || attendanceInput == ""){
             alert ("Please fill in a ll your details!");
             document.location.reload()
         }
