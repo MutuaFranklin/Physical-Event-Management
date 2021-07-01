@@ -168,6 +168,10 @@ $(document).ready(function(){
         var grandTotal = parseInt(total)
         alert("Your total is " + grandTotal);
         console.log(attendanceInput);
+        $("#packageSelectionTotal").text(grandTotal);
+        $("#singleSelectionTotal").text(grandTotal);
+
+
     })
 
 });

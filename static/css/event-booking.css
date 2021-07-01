@@ -1,7 +1,12 @@
 html, body{
     width: 100%;
-    height: 100%;
-    background: linear-gradient(to right, #00d2ff, #3a7bd5);
+    /* background: linear-gradient( rgba(131, 75, 136, 0.9),rgba(70, 62, 145, 0.9) ), url("https://c4.wallpaperflare.com/wallpaper/769/17/108/wedding-table-arrangement-formal-dinner-place-setting-wallpaper-preview.jpg"); */
+
+
+    background: linear-gradient( rgba(17, 45, 77, 0.8),rgba(164, 111, 224, 0.9) ), url("https://c4.wallpaperflare.com/wallpaper/769/17/108/wedding-table-arrangement-formal-dinner-place-setting-wallpaper-preview.jpg");
+
+    background-size: cover;
+    background-position: center;
 }
 #main-navbar{
     background: transparent !important;
@@ -13,6 +18,7 @@ html, body{
   text-transform: uppercase;
   font-size: 14px;
   font-weight: bold; 
+  margin-left: 20px;
 }
 
 .navbar-nav > li{
@@ -22,18 +28,36 @@ html, body{
   font-size: 12px;
   font-weight: bold;
 }
+
+
+.header h4{
+    text-align: center;
+    font-size: 13px;
+    font-weight: bold;
+    margin-top: 20px;
+    color: #fff;
+  }
+
 #eventBookingForm{
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 75%;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.eventBookingInputFields input{
+    border: 1px solid #2109F6 !important;
+    height: 50px !important;
 }
 #eventBookingMain{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-self: center;
     height: 100%;
+    margin-top: 100px;
 }
 .eventBookingInputFields{
     border-radius: 15px;
@@ -41,18 +65,20 @@ html, body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-self: center;
     background-color:rgba(240,255,255, 0.3);
-    width: 75%;
+    width: 100%;
     padding-top: 20px;
 }
 .mb-3{
     width: 70%;
 }
 .singleSelectionTotal{
-    width: 30%;
+    width: 50% !important;
     height: 30%;
 }
 #modalButtons{
+    /* margin-top: 50px; */
     padding: 10px 0px;
     width: 100%;
     display: flex;
@@ -60,10 +86,92 @@ html, body{
     align-items: center;
 }
 #selectionButtons{
-    width: 230px;
     height: 40px;
+    width: 170px;
+    font-size: 12px;
+    font-weight: bold;
+     border-radius: 0%;
+    background-color: #2109F6;
+    border: none;
+    margin: 40px;
+
 }
+
+#selectionButtons:hover{
+    background-color: #8845ba !important;
+    border: 2px solid white;
+}
+
+
+
 #row1{
     display: flex;
 }
+.modal-content{
+    width: 550px;
+    height: 530px;
+    border: 1px solid white;
+    
+  }
 
+
+  .modal-header h5{
+    color: #2109F6;
+    text-align: center;
+    
+  }
+
+  .modal-header button{
+    color: white !important;
+    
+  }
+  .modal-body{
+    color: #fff;
+    background: linear-gradient( rgba(55, 21, 77, 0.9),rgba(133, 113, 243, 0.9) ), url("https://c4.wallpaperflare.com/wallpaper/769/17/108/wedding-table-arrangement-formal-dinner-place-setting-wallpaper-preview.jpg");
+  }
+
+  .modal-body .singleSelections{
+      margin-top: 50px;
+  }
+
+  .modal-body .singleSelections .form-check{
+      margin-top: 30px;
+  }
+
+ .modal-body .singleSelectionsCost{
+    margin-top: 30px;
+
+ }
+
+ .modal-footer .btn{
+    font-size: 14px !important;
+    font-weight: bold;
+    border-radius: 0%;
+
+ }
+
+
+ .modal-footer #book-now{
+    background-color: #2109F6 !important;
+ }  
+ 
+ 
+ .modal-footer #book-now:hover{
+    background-color: #8845ba !important;
+    border: 2px solid white;
+}
+
+.card-body{
+    color: black;
+}
+
+.basicsMain, .premiumMain, .proMain{
+    margin-top: 20px;
+}
+
+.packageSelectionsCost{
+    margin-top: 20px;
+
+}
+  
+ 
