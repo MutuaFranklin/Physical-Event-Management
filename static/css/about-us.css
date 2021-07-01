@@ -1,0 +1,131 @@
+html {
+    font-family:'Times New Roman', Times, serif !important;
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    -ms-overflow-style: scrollbar;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
+  
+ 
+    /*============================================================================================ */
+      /*  ABOUT US PAGE
+      ============================================================================================ */
+  
+    .about-page{
+      height: 100vh;
+      width: 100%;
+      background: linear-gradient( rgba(26, 59, 168, 0.9),rgba(70, 62, 145, 0.9) ), url("https://c4.wallpaperflare.com/wallpaper/769/17/108/wedding-table-arrangement-formal-dinner-place-setting-wallpaper-preview.jpg");
+      background-size: cover;
+    }
+  
+    #main-navbar{
+      background: transparent !important;
+    
+    }
+  
+    #main-navbar .navbar-brand{
+    background: transparent !important;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+    
+  }
+  
+    .navbar-nav > li{
+    padding-left:30px;
+    padding-right:30px;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: bold;
+  }
+
+
+
+  .header h4{
+    text-align: center;
+    font-size: 13px;
+    font-weight: bold;
+    margin-top: 20px;
+    color: #fff;
+  }
+  #about-description {
+      height: 100px;
+      font-size: 16px;
+      line-height: 2;
+      background-color: rgb(201,	202,	244, 0.5);
+      margin-bottom: 20px;
+  }
+    h2{
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+  }
+
+  #our-team{
+      height: 220px; 
+      background-color: rgb(201,	202,	244, 0.5);
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      
+  }
+  #our-partners{
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 5px;
+
+}
+  #our-partners img{
+      height: 100px;
+      width: 200px;
+    
+
+  }
+  
+  
+  .card-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-bottom: 40px;
+  }
+  
+ .card-container .card-caption{
+    margin-top: 0px;
+    font-size: 12px;
+    color: black;
+    font-weight: bold;
+    margin-left: 20px;
+  }
+  
+  
+  
+  .card{
+    height: 30vh;
+    width: 20vw;
+    background-color: grey;
+    border-radius: 0% !important;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px !important;
+    margin-left: 20px;
+    margin-top: 40px;
+
+  
+  }
+  #our-team img{
+    border: 1px solid rgb(69, 4, 99);
+    border-radius: 4px;
+    padding: 5px;
+    width: 240px;
+  }
+  
+  #text img{
+    height: 30vh;
+    width: 20vw;
+  }
