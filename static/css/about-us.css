@@ -12,7 +12,7 @@ html {
       ============================================================================================ */
   
     .about-page{
-      height: 100vh;
+      height: 150vh;
       width: 100%;
       background: linear-gradient( rgba(26, 59, 168, 0.9),rgba(70, 62, 145, 0.9) ), url("https://c4.wallpaperflare.com/wallpaper/769/17/108/wedding-table-arrangement-formal-dinner-place-setting-wallpaper-preview.jpg");
       background-size: cover;
@@ -62,7 +62,7 @@ html {
   }
 
   #our-team{
-      height: 220px; 
+      height: 500px; 
       background-color: rgb(201,	202,	244, 0.5);
       display: flex;
       flex-direction: row;
@@ -75,7 +75,7 @@ html {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    margin-top: 5px;
+    margin-top: 3px;
 
 }
   #our-partners img{
@@ -122,10 +122,12 @@ html {
     border: 1px solid rgb(69, 4, 99);
     border-radius: 4px;
     padding: 5px;
-    width: 240px;
+    width: 260px;
+    height: 180px;
   }
   
   #text img{
     height: 30vh;
     width: 20vw;
   }
+  
