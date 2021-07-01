@@ -171,7 +171,7 @@ $(document).ready(function(){
         $("#packageSelectionTotal").text(grandTotal.toString());
         $("#singleSelectionTotal").text(grandTotal.toString());
 
-        // document.location.reload()
+        document.location.reload()
 
     })
 
