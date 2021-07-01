@@ -17,6 +17,11 @@ $(document).ready(function(){
         var locationInput = document.getElementById("locationUserInput").value;
         var attendanceInput = parseInt(document.getElementById("projectedAttendanceInput").value);
 
+        if (namesInput == "" || emailInput == "" || telNumberInput == "" || locationInput == ""){
+            alert ("Please fill in a ll your details!");
+            document.location.reload()
+        }
+
         var tentsSelect = document.getElementById("tentsSwitch");
         var audioSelect = document.getElementById("audioSwitch");
         var cateringSelect = document.getElementById("cateringSwitch");
