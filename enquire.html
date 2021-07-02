@@ -61,16 +61,21 @@
                             <label for="email"><i class="fa fa-envelope-o" aria-hidden="true"></i>Email Address</label>
                         </div>
                     </div>
-                    <div class="input-group">
-                        <input type="text" id="nature" required>
-                        <label for="nature"><i class="fa fa-envira" aria-hidden="true"></i>Nature of the
-                            Appointment</label>
+                    <div id="select">
+                        <!-- <input type="text" id="nature" required> -->
+                        <select name="cars" id="nature">
+                            <option value="nature">Nature of the Appointment</option>
+                            <option value="Remote Meet">Remote Meet</option>
+                            <option value="Physical Meet">Physical Meet</option>
+                          </select>
+                        <!-- <label for="nature"><i class="fa fa-envira" aria-hidden="true"></i>Nature of the
+                            Appointment</label> -->
                     </div>
                     <div class="input-group">
                         <textarea id="message" rows="8" required></textarea>
                         <label for="message"><i class="fa fa-comments-o" aria-hidden="true"></i> Your Message</label>
                     </div>
-                    <button type="submit" id="btn-button">SUBMIT</button>
+                    <button type="submit">SUBMIT</button>
                 </div>
             </form>
         </div>
@@ -94,7 +99,7 @@
         type="text/javascript">window.dojoRequire(["mojo/signup-forms/Loader"], function (L) { L.start({ "baseUrl": "mc.us3.list-manage.com", "uuid": "e71bed4d6ae5a7c984dfe28b0", "lid": "dbf7e27685", "uniqueMethods": true }) })</script>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"
         integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-    <script src="static/js/scripts.js"></script>
+    <script src="static/js/homescripts.js"></script>
 
     <body>
 
